@@ -31,7 +31,7 @@ class HomeController extends Controller
         $folder = $user->folders()->first();
 
         if (is_null($folder)) {
-            return view('/home');
+            return view('home');
         }
 
         // フォルダがあればそのフォルダのタスク一覧にリダイレクトする
